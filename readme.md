@@ -13,6 +13,7 @@ Ce projet est une application web permettant de générer des **nuages de mots**
 
 ## Arborescence du Projet
 
+```plaintext
 nuageDeMots_V2/
 │
 ├── index.php                # Point d'entrée principal de l'application
@@ -29,6 +30,7 @@ nuageDeMots_V2/
 │   └── texte_pyramides.txt  # Exemple de fichier texte
 │
 └── wordcloud2.js-gh-pages/  # Bibliothèque WordCloud
+```
 
 ## Prérequis
 
