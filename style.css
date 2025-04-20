@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box; /* On exclut les marges dans le calcul de la dimension des box */
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "Parkinsans", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh; /* 100% de la page est visible */
+    background-color: #4e83d2;
+    color: white;
+}
+content {
+    display: flex;
+    flex-direction: column; /* Les éléments sont alignés verticalement */
+    align-items: left;
+    gap: 50px;
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.container_titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 30pt;
+    color: #000D1A;
+}
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.container_introduction > p {
+    text-align: justify;
+}
+.formulaire, .charger_fichier {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #000D1A;
+}
+label, .selectionner_fichier, .titre_affichage {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #000D1A;
+}
+textarea {
+    width: 100%;
+    height: 280px;
+    border-radius: 15px;
+    padding: 10px;
+    resize: none;
+    background-color: #fffffff5;
+    color: #333333;
+    border: none;
+}
+button {   /* Bouton "Envoyer" sous le formulaire */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12pt;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    font-family: "Parkinsans", sans-serif;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+    background-color: #57c95b;
+    transform: scale(1.1);
+}
+.charger_fichier {
+    gap: 12px;
+} 
+.container_impoter {
+    display: flex;
+    align-items: center;
+}
+.bouton_importer {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 12pt;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.bouton_importer:hover {
+    background-color: #57c95b;
+    transform: scale(1.1);
+}
+.attention {
+    font-size: 10pt;
+    margin-left: 10px;
+}
+.container_canvas {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titre_affichage {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
+#canvas {
+    border-radius: 15px;
+}
